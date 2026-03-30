@@ -1,0 +1,3 @@
+D:\CodeTool\Tool\CMake\bin\cmake.exe -E rm -f CMakeFiles\String_on_class.dir/objects.a
+D:\CodeTool\Tool\MSYS2\ucrt64\bin\ar.exe qc CMakeFiles\String_on_class.dir/objects.a @CMakeFiles\String_on_class.dir\objects1.rsp
+D:\CodeTool\Tool\MSYS2\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\String_on_class.dir/objects.a -Wl,--no-whole-archive -o String_on_class.exe -Wl,--out-implib,libString_on_class.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\String_on_class.dir\linkLibs.rsp

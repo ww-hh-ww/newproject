@@ -1,0 +1,43 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "Mingw-ucrt64-configurepreset",
+            "displayName": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+            "description": "正在使用编译器: C = D:\\CodeTool\\Tool\\MSYS2\\ucrt64\\bin\\gcc.exe, CXX = D:\\CodeTool\\Tool\\MSYS2\\ucrt64\\bin\\g++.exe",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "D:/CodeTool/Tool/MSYS2/ucrt64/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "D:/CodeTool/Tool/MSYS2/ucrt64/bin/g++.exe",
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_TOOLCHAIN_FILE": "D:/CodeTool/Tool/vcpkg/scripts/buildsystems/vcpkg.cmake"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Mingw-ucrt64-buildpreset",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "Mingw-ucrt64-configurepreset"
+        }
+    ],
+    "testPresets": [
+         {
+            "name": "Mingw-ucrt64-testpreset",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "Mingw-ucrt64-configurepreset"
+        }
+    ],
+    "packagePresets": [
+        {
+            "name": "Mingw-ucrt64-packagepreset",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "Mingw-ucrt64-configurepreset"
+        }
+    ]
+}
